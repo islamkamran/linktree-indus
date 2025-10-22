@@ -1,0 +1,11 @@
+project-folder/
+│
+├── index.html
+├── style.css
+├── script.js
+├── dubai-real-estate-guide.pdf
+├── dubai-rental-market-guide.pdf
+└── images/
+    ├── linkedin-post.jpg
+    ├── video1-thumbnail.jpg
+    └── video2-thumbnail.jpg
