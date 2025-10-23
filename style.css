@@ -1,316 +1,471 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #fff;
-    padding: 20px;
-    min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  max-width: 1200px;
+  margin: 0 auto;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  padding: 30px;
+  padding-top: 8%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .logo-section {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .logo-circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-    margin: 0 auto 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border: 3px solid white;
+}
+
+.company-logo {
+  width: 140%;
+  height: 140%;
+  border-radius: 50%;
 }
 
 .company-name {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .company-handle {
-    font-size: 18px;
-    color: #ccc;
-    margin-bottom: 30px;
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 30px;
 }
 
+/* FIX 1: Updated Content Section for better layout */
 .content-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+  align-items: flex-start;
 }
 
 .text-content {
-    flex: 1;
-    min-width: 300px;
-    padding: 25px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    line-height: 1.6;
+  flex: 2; /* Increased flex ratio for more space */
+  min-width: 300px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  line-height: 1.6;
+  font-size: 18px; /* Increased font size */
+  height: 280px;
 }
 
 .social-links {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  flex: 1; /* Smaller flex ratio */
+  min-width: 250px; /* Smaller minimum width */
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Smaller gap */
 }
 
 .social-link {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px; /* Smaller padding */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  min-height: 60px; /* Smaller height */
 }
 
 .social-link:hover {
-    transform: translateY(-5px);
-    background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .social-link i {
-    margin-right: 10px;
-    font-size: 24px;
+  margin-right: 12px;
+  font-size: 20px; /* Smaller icons */
+  width: 24px;
+  text-align: center;
 }
 
-.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-.facebook { background: linear-gradient(45deg, #3b5998, #3b5998); }
-.youtube { background: linear-gradient(45deg, #c4302b, #c4302b); }
-.website { background: linear-gradient(45deg, #1a2a6c, #1a2a6c); }
+.social-text {
+  font-size: 25px; /* Bigger text */
+  font-weight: bold;
+}
+
+.instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+.facebook {
+  background: linear-gradient(45deg, #3b5998, #3b5998);
+}
+.youtube {
+  background: linear-gradient(45deg, #c4302b, #c4302b);
+}
+.website {
+  background: linear-gradient(45deg, #1a2a6c, #1a2a6c);
+}
 
 .contact-section {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 .contact-button {
-    flex: 1;
-    padding: 25px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  min-height: 80px;
 }
 
 .contact-button:hover {
-    transform: translateY(-5px);
-    background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.call-now { background: linear-gradient(45deg, #00b09b, #96c93d); }
-.whatsapp-now { background: linear-gradient(45deg, #25D366, #25D366); }
+.call-now {
+  background: linear-gradient(45deg, #00b09b, #96c93d);
+}
+
+.whatsapp-now {
+  background: linear-gradient(45deg, #25d366, #128c7e);
+}
+
+.contact-icon {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.contact-info {
+  text-align: left;
+  flex: 1;
+}
+
+.contact-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
 .guide-section {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 25px;
-    margin-bottom: 30px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .guide-section:hover {
-    transform: translateY(-5px);
-    background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .guide-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .guide-subtitle {
-    font-size: 18px;
-    color: #ccc;
-    margin-bottom: 20px;
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 20px;
 }
 
 .video-section {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 .video-thumbnail {
-    flex: 1;
-    height: 200px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    position: relative;
+  flex: 1;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
 }
 
 .video-thumbnail:hover {
-    transform: translateY(-5px);
-    background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .video-thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .video-play-icon {
-    position: absolute;
-    font-size: 50px;
-    color: white;
-    opacity: 0.8;
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  opacity: 0.8;
 }
 
+/* FIX 3: Updated Hiring Section for centered LinkedIn image */
 .hiring-section {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    margin-bottom: 30px;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 300px;
 }
 
 .hiring-section:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.linkedin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.linkedin-logo {
+  position: absolute;
+  top: 15px;
+  /* left: 15px; */
+  left: calc(25% + 15px);
+  background: #0077b5; /* LinkedIn brand color */
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.linkedin-logo:hover {
+  transform: scale(1.1);
+  background: #006097;
+}
+
+.linkedin-logo i {
+  color: white;
+  font-size: 20px;
 }
 
 .linkedin-post {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 50%; /* 50% size as requested */
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
 }
 
 .hiring-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    padding: 20px;
-    text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 20px;
+  text-align: center;
 }
 
 .hiring-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #fdbb2d;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fdbb2d;
 }
 
 .hiring-subtitle {
-    font-size: 16px;
-    color: #ccc;
+  font-size: 16px;
+  color: #ccc;
 }
 
 .download-section {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 25px;
-    text-align: center;
-    margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .download-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background: linear-gradient(45deg, #00b09b, #96c93d);
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    margin-top: 15px;
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #00b09b, #96c93d);
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
 .download-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Video Modal Styles */
 .video-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.9);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
-    position: relative;
-    width: 80%;
-    max-width: 800px;
+  position: relative;
+  width: 80%;
+  max-width: 800px;
 }
 
 .close-modal {
-    position: absolute;
-    top: -40px;
-    right: 0;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    .content-section, .contact-section, .video-section {
-        flex-direction: column;
-    }
-    
-    .social-links {
-        min-width: 100%;
-    }
-    
-    .modal-content {
-        width: 95%;
-    }
+  .content-section,
+  .contact-section,
+  .video-section {
+    flex-direction: column;
+  }
+
+  .social-links {
+    min-width: 100%;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+
+  .text-content {
+    font-size: 16px;
+  }
+
+  .social-link {
+    min-height: 50px;
+    padding: 12px 15px;
+  }
+
+  .social-text {
+    font-size: 16px;
+  }
+
+  /* Mobile fix for LinkedIn image */
+  .linkedin-post {
+    width: 80%;
+  }
+
+  .hiring-section {
+    min-height: 200px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .linkedin-logo {
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .linkedin-logo i {
+    font-size: 18px;
+  }
+
+  .linkedin-logo.large {
+    width: 40px;
+    height: 40px;
+  }
+
+  .linkedin-logo.large i {
+    font-size: 20px;
+  }
 }
