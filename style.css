@@ -7,7 +7,9 @@
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    /* url("https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"); */
+    url("https://media.istockphoto.com/id/2213552696/photo/dubai-skyline-featuring-burj-khalifa-and-highway-interchanges.jpg?s=1024x1024&w=is&k=20&c=iR6j-M7-0kKL9O5YbOWGYJUzIIAkPok7qc12DDK-uc4=");
+
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -119,8 +121,8 @@ body {
 }
 
 .social-text {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 17px;
+  font-weight: normal;
 }
 
 .instagram {
@@ -197,13 +199,15 @@ body {
 }
 
 .contact-title {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 17px;
+  font-weight: normal;
   margin-bottom: 5px;
 }
 
 /* Video Section - Responsive layout */
 .video-section {
+  /* height: 1920px;
+  width: 1080px; */
   display: flex;
   gap: 20px;
   margin-bottom: 30px;
@@ -350,52 +354,72 @@ body {
   cursor: pointer;
 }
 
+/* Simple Copyright Section Styles */
+.copyright-section {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: #ccc;
+}
+
+.copyright-text {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.company-address {
+  font-size: 12px;
+  color: #999;
+}
+
 /* ========== MOBILE RESPONSIVE STYLES ========== */
 @media (max-width: 768px) {
   body {
     padding: 10px;
   }
-  
+
   .container {
     padding: 20px;
     padding-top: 15%;
     border-radius: 20px;
   }
-  
+
   .logo-circle {
     width: 100px;
     height: 100px;
   }
-  
+
   .company-name {
     font-size: 24px;
   }
-  
+
   .company-handle {
     font-size: 16px;
   }
-  
+
   /* Content Section - Mobile Layout */
   .content-section {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .text-content {
     font-size: 16px;
     padding: 20px;
     min-width: 100%;
     height: auto;
   }
-  
+
   /* Social Links - Grid Layout for Mobile */
   .social-links {
     min-width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 12px;
   }
-  
+
   .social-link {
     max-height: 65px;
     padding: 15px;
@@ -407,91 +431,104 @@ body {
     flex-direction: column;
     gap: 8px;
   }
-  
+
   .social-link i {
     margin-right: 0;
     font-size: 24px;
   }
-  
+
   .social-text {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: normal;
   }
-  
+
   /* Contact Section - Mobile Layout */
   .contact-section {
     flex-direction: flex;
     gap: 15px;
   }
-  
+
   .contact-button {
     min-height: 70px;
     padding: 15px;
   }
-  
+
   .contact-title {
-    font-size: 20px;
+    font-size: 15px;
   }
-  
+
   .contact-icon {
     width: 40px;
     height: 40px;
     font-size: 22px;
   }
-  
+
   /* Video Section - Mobile Layout */
   .video-section {
     flex-direction: flex;
     gap: 15px;
   }
-  
+
   .video-thumbnail {
     height: 250px;
     border-radius: 20px;
   }
-  
+
   .video-play-icon {
     font-size: 40px;
   }
-  
+
   /* Hiring Section - Mobile Layout */
   .hiring-section {
     min-height: 200px;
     padding: 15px;
     border-radius: 20px;
   }
-  
+
   .linkedin-post {
     width: 80%;
   }
-  
+
   .linkedin-logo {
     width: 35px;
     height: 35px;
     top: 10px;
     left: calc(10% + 10px);
   }
-  
+
   .linkedin-logo i {
     font-size: 18px;
   }
-  
+
   .hiring-overlay {
     padding: 15px;
   }
-  
+
   .hiring-subtitle {
     font-size: 14px;
   }
-  
+
   /* Modal - Mobile Layout */
   .modal-content {
     width: 95%;
   }
-  
+
   .close-modal {
     top: -35px;
     font-size: 25px;
+  }
+
+  .copyright-section {
+    margin-top: 30px;
+    padding-top: 15px;
+  }
+
+  .copyright-text {
+    font-size: 12px;
+  }
+
+  .company-address {
+    font-size: 11px;
   }
 }
 /* Extra small devices */
@@ -500,31 +537,31 @@ body {
     padding: 15px;
     padding-top: 12%;
   }
-  
+
   .logo-circle {
     width: 80px;
     height: 80px;
   }
-  
+
   .company-name {
     font-size: 20px;
   }
-  
+
   .company-handle {
     font-size: 14px;
   }
-  
+
   .text-content {
     font-size: 14px;
     padding: 15px;
   }
-  
+
   /* Social Links - Single column for very small screens */
   .social-links {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
   }
-  
+
   .social-link {
     min-height: 60px;
     padding: 12px;
@@ -532,27 +569,27 @@ body {
     justify-content: flex-start;
     gap: 12px;
   }
-  
+
   .social-link i {
     font-size: 20px;
   }
-  
+
   .social-text {
-    font-size: 16px;
+    font-size: 15px;
   }
-  
+
   .contact-title {
-    font-size: 18px;
+    font-size: 15px;
   }
-  
+
   .video-thumbnail {
     height: 200px;
   }
-  
+
   .linkedin-post {
     width: 90%;
   }
-  
+
   .linkedin-logo {
     left: calc(5% + 10px);
   }
