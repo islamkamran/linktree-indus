@@ -408,13 +408,13 @@ body {
   .text-content {
     font-size: 16px;
     padding: 20px;
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
   }
 
   /* Social Links - Grid Layout for Mobile */
   .social-links {
-    min-width: 100%;
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 12px;
