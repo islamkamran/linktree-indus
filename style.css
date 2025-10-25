@@ -556,26 +556,33 @@ body {
     padding: 15px;
   }
 
-  /* Social Links - Single column for very small screens */
+  /* Fixed Social Links - Equal size buttons covering full width */
   .social-links {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
   }
 
   .social-link {
-    min-height: 60px;
-    padding: 12px;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 12px;
+    min-height: 70px;
+    padding: 12px 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    width: 100%;
   }
 
   .social-link i {
     font-size: 20px;
+    margin-right: 0;
   }
 
   .social-text {
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    width: 100%;
   }
 
   .contact-title {
