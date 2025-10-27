@@ -384,8 +384,20 @@ body {
     padding: 20px;
     padding-top: 15%;
     border-radius: 20px;
-  }
+      }
 
+.social-link {
+    max-height: 65px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 8px;
+    width: auto;
+  }
   .logo-circle {
     width: 100px;
     height: 100px;
@@ -414,8 +426,8 @@ body {
 
   /* Social Links - Grid Layout for Mobile */
   .social-links {
-    max-width: 100%;
-    display: grid;
+    width: auto;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 12px;
   }
@@ -430,6 +442,7 @@ body {
     text-align: center;
     flex-direction: column;
     gap: 8px;
+    width: 145%;
   }
 
   .social-link i {
@@ -534,8 +547,11 @@ body {
 /* Extra small devices */
 @media (max-width: 480px) {
   .container {
-    padding: 15px;
+    width: 100%;
+    padding: 15px 5%;
     padding-top: 12%;
+    box-sizing: border-box;
+    justify-items: middle;
   }
 
   .logo-circle {
@@ -556,21 +572,21 @@ body {
     padding: 15px;
   }
 
-  /* Fixed Social Links - Equal size buttons covering full width */
+  /* ✅ Fix: show 3 social links in first line, 1 in next */
   .social-links {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: auto;
     gap: 8px;
   }
 
   .social-link {
-    min-height: 70px;
-    padding: 12px 5px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
+    flex: 0 0 calc(33.33% - 8px); /* 3 per row */
     text-align: center;
-    width: 100%;
+  }
+
+  .social-link:nth-child(4) {
+    flex: 0 0 100%; /* 4th on new line */
   }
 
   .social-link i {
@@ -582,7 +598,6 @@ body {
     font-size: 13px;
     font-weight: bold;
     white-space: nowrap;
-    width: 100%;
   }
 
   .contact-title {
