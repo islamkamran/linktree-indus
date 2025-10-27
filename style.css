@@ -73,11 +73,11 @@ body {
   gap: 30px;
   margin-bottom: 30px;
   align-items: flex-start;
-}
+  }
 
 .text-content {
   flex: 2;
-  min-width: 85vw;
+  min-width: auto;
   padding: 25px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
@@ -169,7 +169,7 @@ body {
   justify-content: center;
   gap: 15px;
   min-height: 80px;
-}
+  }
 
 .contact-button:hover {
   transform: translateY(-5px);
